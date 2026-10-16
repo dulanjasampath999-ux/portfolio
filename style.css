@@ -36,3 +36,13 @@ footer{border-top:1px solid var(--line);padding:28px 5%;display:flex;justify-con
   .about-grid,.skills-grid{grid-template-columns:1fr}.about-grid{gap:45px}.project,.project:nth-child(even){grid-template-columns:1fr;direction:ltr}.project-image{min-height:240px}.project-info{padding:30px}.section{padding-top:80px;padding-bottom:80px}
   footer{flex-direction:column;gap:8px}
 }
+
+.education-timeline{display:grid;gap:16px;position:relative}
+.education-card{display:grid;grid-template-columns:190px 1fr;gap:30px;border:1px solid var(--line);border-radius:20px;background:#0d0d0f;padding:30px;transition:.25s}
+.education-card:hover{border-color:rgba(168,255,53,.45);transform:translateY(-3px)}
+.education-year{color:var(--accent);font-weight:800;font-size:14px;letter-spacing:.5px}
+.education-content span{font-size:10px;letter-spacing:2px;color:#777;font-weight:800}
+.education-content h3{font-size:27px;letter-spacing:-.7px;margin:7px 0 3px}
+.education-content p{color:#d0d0d4;margin-bottom:7px}
+.education-content small{color:var(--muted)}
+@media(max-width:800px){.education-card{grid-template-columns:1fr;gap:10px}}
